@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './all.css'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assist/logo.png'
 
 function Navbar() {
@@ -41,6 +41,7 @@ function Navbar() {
           <NavLink className="hover" to="/home" onClick={() => setMenuOpen(false)}>
             Home
           </NavLink>
+          
         </li>
         <li>
           <NavLink className="hover" to="/about" onClick={() => setMenuOpen(false)}>
