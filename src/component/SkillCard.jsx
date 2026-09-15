@@ -1,15 +1,13 @@
 
-function SkillCard({name, desc, icon }) {
-      //  const { } =data
-    // console.log("skill=>", data);
-    
+function SkillCard({ name, desc, icon }) {
   return (
     <div className="skill-card">
-      
       <div className="skill-icon">
-        {/* <img src={require("./assist/icon/logo.png")} alt={ name} /> */}
-              <img className="skill-name" src={icon}/>
-
+        <img
+          className="skill-icon-img"
+          src={icon}
+          alt={name}
+        />
       </div>
 
       <h3 className="skill-name">{name}</h3>
