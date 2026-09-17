@@ -9,13 +9,23 @@ const Contact = () => {
     message: ''
   });
 
+  // Apna WhatsApp number yahan country code ke sath, bina + ya 0 ke
+  // Pakistan number 0313-0309189 ban jayega: 923130309189
+  const WHATSAPP_NUMBER = "03130309189";
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
+
+    const text = `New message from portfolio:%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Message:* ${formData.message}`;
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+
+    window.open(whatsappUrl, "_blank");
+
     setFormData({ name: '', email: '', message: '' });
   };
 

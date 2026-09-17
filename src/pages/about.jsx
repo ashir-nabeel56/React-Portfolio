@@ -1,6 +1,6 @@
 // import React from 'react'
 import '../component/global/all.css'
-import aboutImage from '../assist/our.jpeg'
+import aboutImage from '../assist/ChatGPT Image Sep 17, 2026, 10_03_54 AM.png'
 
 function about() {
   return (

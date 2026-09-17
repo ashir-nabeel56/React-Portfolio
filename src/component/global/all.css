@@ -952,3 +952,9 @@ body.dark .project-card:hover {
   }
 }
 
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
